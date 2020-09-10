@@ -1,0 +1,25 @@
+Package: desnare
+Type: Package
+Title: Simulate Desnaring In Protected Area
+Version: 0.1.0
+Author: Henk Harmsen
+Maintainer: The package maintainer <henk@harmsen.eco>
+Description: Gets spatial positions from real neck snare data in the Soysambu Conservancy, Kenya, and simulates desnaring scenarios.
+    This includes: sequential desnaring (each raster cell is visited once), repeat desnaring (visit cells adjacent to identified snares multiple times),
+    and epsilon greedy (random repeat visits of known snare locations).
+License: MPL-2.0
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    data.table,
+    raster,
+    igraph,
+    sp,
+    sf,
+    foreach,
+    doParallel,
+    tinytest,
+    ineq,
+    colorspace,
+    restorepoint
+RoxygenNote: 7.0.2
